@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebRTC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebRTC</title>
 </head>
+
 <body>
-    
+  <div style="width: 50%;">
+    <video id="local" autoplay playsinline style="width: 100%; background-color: #aaa;"></video>
+  </div>
+  <div style="width: 50%;">
+    <video id="remote" autoplay playsinline style="width: 100%; background-color: #aaa;"></video>
+  </div>
+  <button id="btnStartLocalVideo">Start local Video</button>
+  <button id="btnCall" disabled>Call</button>
+
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
